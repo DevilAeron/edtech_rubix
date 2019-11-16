@@ -103,61 +103,18 @@
           <div class="item" style="margin-left: 20px">
             <br>
             <form>
-            <label for="MRN"> <strong style="margin-left: 50px">Student's Name:</strong><span>*</span></label>
-            <input id="MRN" type="text" name="MRN" required/>
+            <label for="name"> <strong style="margin-left: 50px">Student's Name:</strong><span>*</span></label>
+            <input id="name" type="text" name="name" required/>
             
-            <label for="qwe"> <strong style="margin-left: 600px">Roll Number:</strong><span>*&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span></label>
-            <input id="qwe" type="text" name="qwe" required/>
+            <label for="rno"> <strong style="margin-left: 600px">Roll Number:</strong><span>*&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span></label>
+            <input id="rno" type="text" name="rno" required/>
             <br><br>
-            <label for="qwe"> <strong style="margin-left: 50px">E-mail:</strong><span>*&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span></label>
-            <input id="qwe" type="text" name="qwe" required/>
             
-            <label for="qwe"> <strong style="margin-left: 600px">Contact:</strong><span>*&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span></label>
-            <input id="qwe" type="text" name="qwe" required/>
-            <br>
           </div>
           <br><br><br>
           <div class="Date" style="margin-left: 20px">
-           <strong><p>Date of Birth<span>*</span></p></strong> <select name="Adm_m">
-<option>&nbspMonth</option>
-<option value="January">January</option>
-<option value="Febuary">Febuary</option>
-<option value="March">March</option>
-<option value="April">April</option>
-<option value="May">May</option>
-<option value="June">June</option>
-<option value="July">July</option>
-<option value="August">August</option>
-<option value="September">September</option>
-<option value="October">October</option>
-<option value="November">November</option>
-<option value="December">December</option>
-</select>
-          <select name="Adm_y">
-<option>&nbsp&nbspYear</option>
-
-<option value="2019">2019</option>
-<option value="2018">2018</option>
-<option value="2018">2017</option>
-<option value="2018">2016</option>
-<option value="2018">2015</option>
-<option value="2018">2014</option>
-<option value="2018">2013</option>
-<option value="2018">2012</option>
-<option value="2018">2011</option>
-<option value="2018">2010</option>
-<option value="2018">2009</option>
-<option value="2018">2008</option>
-<option value="2018">2007</option>
-<option value="2018">2006</option>
-<option value="2018">2005</option>
-<option value="2018">2004</option>
-<option value="2018">2003</option>
-<option value="2018">2002</option>
-<option value="2018">2001</option>
-<option value="2018">2000</option>
-</select>
-         <select name="Adm_z">
+           <strong><p>Date of Birth<span>*</span></p></strong>
+               <select name="dob">
 <option>&nbsp&nbspDate</option>
 
 <option value="1">1</option>
@@ -193,34 +150,76 @@
 <option value="31">31</option>
 
 </select>
+              
+              
+              <select name="mob">
+<option>&nbspMonth</option>
+<option value="January">January</option>
+<option value="Febuary">Febuary</option>
+<option value="March">March</option>
+<option value="April">April</option>
+<option value="May">May</option>
+<option value="June">June</option>
+<option value="July">July</option>
+<option value="August">August</option>
+<option value="September">September</option>
+<option value="October">October</option>
+<option value="November">November</option>
+<option value="December">December</option>
+</select>
+          <select name="yob">
+<option>&nbsp&nbspYear</option>
+
+<option value="2019">2019</option>
+<option value="2018">2018</option>
+<option value="2018">2017</option>
+<option value="2018">2016</option>
+<option value="2018">2015</option>
+<option value="2018">2014</option>
+<option value="2018">2013</option>
+<option value="2018">2012</option>
+<option value="2018">2011</option>
+<option value="2018">2010</option>
+<option value="2018">2009</option>
+<option value="2018">2008</option>
+<option value="2018">2007</option>
+<option value="2018">2006</option>
+<option value="2018">2005</option>
+<option value="2018">2004</option>
+<option value="2018">2003</option>
+<option value="2018">2002</option>
+<option value="2018">2001</option>
+<option value="2018">2000</option>
+</select>
+        
           </div>
           <div class="item" style="margin-left: 20px">
             <label for="Gender">Gender<span>*</span></label><br><br>
-            <input id="Gender" type="radio" name="Gender" value="Male" required>Male</input><br>
-            <input id="Gender" type="radio" name="Gender" value="Female" required>Female</input><br>
-            <input id="Gender" type="radio" name="Gender" value="Others" required>Others</input><br>
+            <input id="gender" type="radio" name="gender" value="male" required>Male</input><br>
+            <input id="gender" type="radio" name="gender" value="female" required>Female</input><br>
+            <input id="gender" type="radio" name="gender" value="others" required>Others</input><br>
             <br>      
             </div>
           <br><br>         
           <h2 id="rider2" style="margin-left: 20px">Parent's Details</h2>
           <br>
           <div class="Parents" style="margin-left: 20px">
-            <label for="FName"><strong>Father's Name&nbsp</strong><span>*</span>&nbsp</label>
-            <input id="FName" type="text" name="FName">
-            <label for="MName"><strong>Mother's Name</strong><span>*</span></label>
-            <input id="MName" type="text" name="MName">
+            <label for="fname"><strong>Father's Name&nbsp</strong><span>*</span>&nbsp</label>
+            <input id="fname" type="text" name="fname">
+            <label for="mname"><strong>Mother's Name</strong><span>*</span></label>
+            <input id="mname" type="text" name="mname">
           </div>
           <div class="Parents" style="margin-left: 20px">
             <label for="email"><strong>Father's Email</strong><span>*</span>&nbsp&nbsp</label>
-            <input id="email" type="text" name="email" />
+            <input id="femail" type="email" name="femail"  />
             <label for="email"><strong>&nbspMother's Email</strong><span>*</span></label>
-            <input id="email" type="text" name="email" />
+            <input id="memail" type="email" name="memail"  />
           </div>
           <div class="Parents" style="margin-left: 20px">
-            <label for="Fphone"><strong>Father's Mobile</strong><span>*</span></label>
-            <input id="Fphone" type="tel" name="Fphone" required/>
-            <label for="Mphone"><strong>Mother's Mobile</strong><span>*</span></label>
-            <input id="Mphone" type="tel" name="Mphone" required/>
+            <label for="fphone"><strong>Father's Mobile</strong><span>*</span></label>
+            <input id="fphone" type="tel" name="fphone" required/>
+            <label for="mphone"><strong>Mother's Mobile</strong><span>*</span></label>
+            <input id="mphone" type="tel" name="mphone" required/>
           </div>
           <div class="btn-block" style="margin-top: 20px;margin-left: 20px">
           <button class="button button1" type="submit" value="Submit">Submit</button>
